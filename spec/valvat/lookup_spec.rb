@@ -132,6 +132,7 @@ describe Valvat::Lookup do
         end
       end
     end
+    end
   end
 
   describe "#validate with VIES test enviroment" do
@@ -216,13 +217,13 @@ describe Valvat::Lookup do
       before { stub_request(:get, /ec.europa.eu/).to_timeout }
 
       it 'raises error' do
-        expect { result }.to raise_error(HTTP::TimeoutError)
+        expect { result }.to raise_error(Net::OpenTimeout, "execution expired")
       end
 
       it 'also raises error with raise_error set to false (not handled)' do
         expect {
           described_class.validate('DE302', options.merge(raise_error: false))
-        }.to raise_error(HTTP::TimeoutError)
+        }.to raise_error(Net::OpenTimeout, "execution expired")
       end
     end
 
