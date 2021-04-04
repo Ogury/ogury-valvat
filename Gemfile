@@ -4,3 +4,4 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'guard-rspec', '~>4.0'
+gem 'webmock'

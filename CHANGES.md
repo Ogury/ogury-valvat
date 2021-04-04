@@ -1,7 +1,20 @@
 
 ### dev
+[full changelog](http://github.com/yolk/valvat/compare/v1.2.0...master)
 
-[full changelog](http://github.com/yolk/valvat/compare/v1.0.1...master)
+### 1.2.0
+
+[full changelog](http://github.com/yolk/valvat/compare/v1.1.0...v1.2.0)
+
+* Added support for GB VAT numbers validation using the HMRC service (by [Adrien Rey-Jarthon](https://github.com/jarthod))
+
+### 1.1.0 / 2021-01-15
+
+[full changelog](http://github.com/yolk/valvat/compare/v1.0.1...v1.1.0)
+
+* Added support for Northern Ireland XI prefixed VAT numbers (by [Avatar Ignacy Kasperowicz](https://github.com/kspe))
+* ActiveModel: Return specific error message if VIES is down and fail_if_down is set to true (by [Arkadiy Zabazhanov](https://github.com/pyromaniac))
+* Removed support for EOL rubies (all before 2.5) and ActiveModel before 5.0
 
 ### 1.0.1 / 2020-12-06
 
