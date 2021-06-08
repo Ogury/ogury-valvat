@@ -31,7 +31,7 @@ class Valvat
         def self.cleanup(raw)
           if raw.key?("target")
             h = {
-              address: address_format(raw.dig("target", "address")),
+              address: raw.dig("target", "address"),
               country_code: raw.dig("target", "address", "countryCode"),
               name: raw.dig("target", "name"),
               vat_number: raw.dig("target", "vatNumber"),
@@ -47,19 +47,6 @@ class Valvat
             exception = FAULTS[code] || UnknownLookupError
             { error: exception.new("The HMRC web service returned the error '#{code}' (#{raw["message"]}).") }
           end
-        end
-
-        # Example raw address from the API:
-        # {
-        #   "line1": "HM REVENUE AND CUSTOMS",
-        #   "line2": "RUBY HOUSE",
-        #   "line3": "8 RUBY PLACE",
-        #   "line4": "ABERDEEN",
-        #   "postcode": "AB10 1ZP",
-        #   "countryCode": "GB"
-        # }
-        def self.address_format(address)
-          address&.values&.join("\n")
         end
       end
     end
