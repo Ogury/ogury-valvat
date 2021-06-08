@@ -1,0 +1,34 @@
+pl:
+  errors:
+    messages:
+      invalid_vat: nie jest prawidłowym %{country_adjective} numerem VAT
+  valvat:
+    country_adjectives:
+      eu: europejskim
+      at: austriackim
+      be: belgijskim
+      bg: bułgarskim
+      cy: cypryjskim
+      cz: czeskim
+      de: niemieckim
+      dk: duńskim
+      ee: estońskim
+      es: hiszpańskim
+      fi: fińskim
+      fr: francuskim
+      gb: angielskim
+      gr: greckim
+      hu: węgierskim
+      ie: irlandzkim
+      it: włoskim
+      lt: litewskim
+      lu: luksemburskim
+      lv: łotewskim
+      mt: maltańskim
+      nl: holenderskim
+      pl: polskim
+      pt: portugalskim
+      ro: rumuńskim
+      se: szwedzkim
+      si: słoweńskim
+      sk: słowackim

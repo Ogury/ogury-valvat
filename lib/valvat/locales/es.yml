@@ -1,0 +1,34 @@
+es:
+  errors:
+    messages:
+      invalid_vat: no es un número de IVA intracomunitario %{country_adjective} válido
+  valvat:
+    country_adjectives:
+      eu: europeo
+      at: austriaco
+      be: belga
+      bg: búlgaro
+      cy: chipriota
+      cz: checo
+      de: alemán
+      dk: danés
+      ee: estonio
+      es: español
+      fi: finlandés
+      fr: francés
+      gb: británico
+      gr: griego
+      hu: húngaro
+      ie: irlandés
+      it: italiano
+      lt: lituano
+      lu: luxemburgués
+      lv: letón
+      mt: maltés
+      nl: holandés
+      pl: polaco
+      pt: portugués
+      ro: rumano
+      se: sueco
+      si: esloveno
+      sk: eslovaco

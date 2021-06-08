@@ -1,0 +1,33 @@
+fr:
+  errors:
+    messages:
+      invalid_vat: "Numéro de TVA %{country_adjective} invalide"
+  valvat:
+    country_adjectives:
+      eu: intracommunautaire
+      at: autrichien
+      be: belge
+      bg: bulgare
+      cy: chypriote
+      cz: tchèque
+      de: allemand
+      dk: danois
+      ee: estonien
+      es: espagnol
+      fi: finlandais
+      fr: français
+      gb: britannique
+      gr: grec
+      ie: irlandais
+      it: italien
+      lt: lituanien
+      lu: luxembourgeois
+      lv: letton
+      mt: maltais
+      nl: hollandais
+      pl: polonais
+      pt: portugais
+      ro: roumain
+      se: suédois
+      si: slovène
+      sk: slovaque

@@ -1,0 +1,8 @@
+pkg/*
+*.gem
+.bundle
+Gemfile.lock
+gemfiles/*.lock
+tmp
+.rbenv-*
+.ruby-version
