@@ -30,11 +30,13 @@ class Valvat
         # - address is newline separated instead of coma (also more precise)
         def self.cleanup(raw)
           if raw.key?("target")
+            target = raw["target"]
+            address = target["address"]
             h = {
-              address: raw.dig("target", "address"),
-              country_code: raw.dig("target", "address", "countryCode"),
-              name: raw.dig("target", "name"),
-              vat_number: raw.dig("target", "vatNumber"),
+              address: address,
+              country_code: address["countryCode"],
+              name: target["name"],
+              vat_number: target["vatNumber"],
               valid: true
             }
             h[:request_date] = Time.parse(raw["processingDate"]) if raw.key?("processingDate")
